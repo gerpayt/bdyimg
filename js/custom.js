@@ -2,7 +2,7 @@
     (function ($) {
       var handler = null,
           page = 1,
-          path = '/',
+          path = $('#default_path').html(),
           isLoading = false;
 
       // Prepare layout options.

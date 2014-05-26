@@ -15,7 +15,8 @@ app = web.application(urls, globals())
 
 class index:
     def GET(self):
-        return render.index()
+        default_path = config.img_path[config.image_path_default]
+        return render.index(default_path)
 
 class get:
     def GET(self):
